@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El bodegón del gallero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/gallo_logo.png">
+
+</head>
+
+<body>
+    <nav class="navbar container">
+        <div class="left">
+            <ul>
+                <li class=".gallo-logo"><img src="images/encabezado.png" alt=""></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide" id="productos">
+                <div class="swiper-txt">
+                    <h3>Espuelas</h3>
+                    <p>Espuelas excalibur con más de 20 años en la construcción y elaboración de espuelas plasticas
+                        lider en 8 países se encuentra presente en Colombia se posicionó como la espuela lider en
+                        Colombia por su desempeño</p>
+                    <button onclick="mostrarModal()">Ver</button>
+                </div>
+                <img src="images/espuelas.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Monas</h3>
+                    <p>Descripción</p>
+                    <button onclick="mostrarModal()">Ver</button>
+                </div>
+                <img src="images/monas.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Palanganas - Cunas</h3>
+                    <p>Las cargueras o cunas son fabricadas en tela jeans de 13 onzas las cuales le dan un efecto
+                        térmico ya que en lo frío mantiene los ejemplares tibios y el climas adversos o calientes les da
+                        un toque de frescura las fabricamos a su gusto bordadas o estampadas</p>
+                    <button onclick="mostrarModal()">Ver</button>
+                </div>
+                <img src="images/cargueras.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Esparadrapo</h3>
+                    <p>las cintas de amarre son fabricadas en tela con adhesivo las cuales vienen en diferentes colores
+                        con 25 yardas las unicolor y las estampadas de 20 yardas
+                    </p>
+                    <button onclick="mostrarModal()">Ver</button>
+                </div>
+                <img src="images/cintas.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Placas</h3>
+                    <p>Descripción</p>
+                    <button onclick="mostrarModal()">Ver</button>
+                </div>
+                <img src="images/placas.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="nosotros" id="nosotros">
+            <h1>Nosotros</h1>
+            <p>
+                En "El Bodegón del Gallero", nos comprometemos a ser el aliado confiable de criadores, entrenadores y
+                amantes de los gallos de pelea. Con una pasión arraigada en el cuidado y la excelencia, nos enorgullece
+                ofrecer una amplia gama de productos de calidad. Más que una empresa, somos una comunidad unida por el
+                amor y el respeto por
+                estos magníficos animales.En "El Bodegón del Gallero", nuestra misión es simple pero
+                poderosa: ayudarte a alcanzar tus objetivos y celebrar el éxito junto a ti. Apreciamos la confianza que
+                depositas en nosotros y nos comprometemos a superar tus expectativas en cada compra</p>
+        </div>
+
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <h2>Detalles del Producto</h2>
+                <p>Descripción detallada del producto...</p>
+                <button onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
